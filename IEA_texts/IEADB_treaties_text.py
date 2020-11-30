@@ -5,21 +5,21 @@ from bs4 import BeautifulSoup
 
 
 #to run this code, you first need to create a folder where you will
-# store the treaties texts.
+# store the treaties texts. In this example, I created a folder 
+#called "treaties" on my desktop.
 
 list_text_id = [
     3059,
     8501,
     3100,
-    5006] #add all treaties IDs in there
+    5006] #add all your treaties IDs in there.
 
 
 i = 0
-inc = 0
-n = len(list_text_id) #with n the total number of treaties
+n = len(list_text_id) #with n the total number of treaties.
 
 while i <= n-1:  
-    treaty_id = list_text_id[inc]
+    treaty_id = list_text_id[i]
     url_string='https://iea.uoregon.edu/treaty-text/'+str(treaty_id)
     print(url_string) #print the URL to test that the code is working
     
@@ -34,8 +34,8 @@ while i <= n-1:
     location = "C:/Users/alice/Desktop/treaties/" + filename + ".doc"
     file = open(location, "w", encoding="utf-8")
 
-    #Now we are going to write on our .doc file each element (define by the tag <p>) from our list
-    #(mytext). But before adding a line to the .doc file, we are going to clean it from its html tag. 
+    #Now we are going to clean our text from its HTML tags and write the 
+    #"clean" text in our word document.
     
     cleanr = re.compile('<.*?>')
     cleantext = re.sub(cleanr, '', myText)
@@ -44,4 +44,3 @@ while i <= n-1:
     file.close()
 
     i += 1
-    inc += 1
