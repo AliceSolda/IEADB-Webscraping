@@ -32,6 +32,6 @@ for treaty in list_treaty:
     #"clean" text in our word document.
     
     cleanr = re.compile('<.*?>')
-    cleantext = re.sub(cleanr, '', text_treaty)
-    file.write(cleantext)    
+    clean_text = re.sub(cleanr, '', text_treaty)
+    file.write(clean_text)    
     file.close()
