@@ -8,10 +8,10 @@ from bs4 import BeautifulSoup
 #called "treaties" on my desktop.
 
 list_treaty = [
-    3059,
-    8501,
-    3100,
-    5006] #add all treaties IDs in there
+    
+#add all treaties IDs in there
+
+    ]
 
 for treaty in list_treaty: 
     url_string='https://iea.uoregon.edu/treaty-text/'+str(treaty)
