@@ -39,7 +39,6 @@ while i <= n-1:
     
     cleanr = re.compile('<.*?>')
     cleantext = re.sub(cleanr, '', myText)
-    #cleantext = cleantext + "\n"
     file.write(cleantext)    
     
     file.close()
