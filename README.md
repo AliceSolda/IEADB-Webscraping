@@ -8,3 +8,7 @@ and over 90,000 individual country “membership actions” that are constantly 
 This repository contains a series of web scraping tutorials (alongside with the code) 
 specifically design to retrieve data (e.g. treaties texts, membership data, etc.)
 from the IEA Database using Python (tutorials were made using Python 3.7.3).
+
+If you found the tutorials useful, you can thank me by leaving a star to the repository \(^w^)/
+
+Good luck!
