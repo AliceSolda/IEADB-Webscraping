@@ -1,4 +1,4 @@
-Web scraping the IEA Database
+Web scraping and the IEA Database
 
 (c) Ronald B. Mitchell and the IEA Database Project, 2002-2020
 
