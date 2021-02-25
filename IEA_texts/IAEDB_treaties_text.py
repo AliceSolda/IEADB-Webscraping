@@ -1,5 +1,4 @@
 import requests
-import urllib.request
 from bs4 import BeautifulSoup
 
 #to run this code, you first need to create a folder where you will
@@ -25,9 +24,5 @@ for treaty in list_treaty:
     print(filename) #print the file name to test that the code is working
     location = "C:/Users/alice/Desktop/treaties/" + filename + ".doc"
     file = open(location, "w", encoding="utf-8")
-
-    #Now we are going to clean our text from its HTML tags and write the 
-    #"clean" text in our word document.
-    
     file.write(str(text_treaty))    
     file.close()
