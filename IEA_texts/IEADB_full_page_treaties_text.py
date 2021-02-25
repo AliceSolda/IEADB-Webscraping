@@ -1,7 +1,9 @@
 import requests
-import urllib.request
 from bs4 import BeautifulSoup
 
+#to run this code, you first need to create a folder where you will
+# store the treaties texts. In this example, I created a folder 
+#called "treaties" on my desktop.
 
 list_treaty = [
     
