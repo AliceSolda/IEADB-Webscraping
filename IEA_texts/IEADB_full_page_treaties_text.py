@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 list_treaty = [
     
-4284,
+#add all treaties IDs in there
 
     ]
 
@@ -21,6 +21,5 @@ for treaty in list_treaty:
     print(filename) #print the file name to test that the code is working
     location = "C:/Users/alice/Desktop/treaties/" + filename + ".doc"
     file = open(location, "w", encoding="utf-8")
-
     file.write(str(soup))    
     file.close()
